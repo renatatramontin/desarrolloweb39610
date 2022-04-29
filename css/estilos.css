@@ -1,0 +1,1853 @@
+/* Resetea los estilos de los navegadores por defecto */
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Inicio Header */
+
+ul{
+    list-style: none;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav{
+    width: 100%;
+}
+
+.nav_lista{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 30px;
+}
+
+.nav_enlace{
+    color: #455D6E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+/* Fin del header */
+
+
+
+
+
+/* HOME */
+
+/* Main */
+
+/* Seccion 1 */
+
+.primeraseccion{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.6fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotoportada titulo"
+    "fotoportada subtitulo"; 
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+
+.primeraseccion_left img {
+    max-width: 2000px;
+    grid-area: fotoportada;
+}
+
+.primeraseccion_titulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    grid-area: titulo;
+    padding-left: 70px;
+    padding-top: 0px;
+}
+
+.primeraseccion_parrafo{
+    color: #455D6E;
+    grid-area: titulo;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+/* Fin seccion 1 */
+
+
+/* Seccion 2 */
+
+.segundaseccion{
+    display: flex;
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 600px;
+    max-width: 1400px;
+    margin top: 800px;
+    align-items: center;
+}
+
+.segundaseccion_left{
+    width: 50%;
+    display: flex;
+}
+
+.segundaseccion_left img{
+    margin: 0px auto;
+    width: 350px;
+    height: 450px;
+}
+
+.segundaseccion_left button{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-left: 80px;
+} 
+
+.segundaseccion_right{
+    width: 50%;
+    display: flex;
+}
+
+.segundaseccion_right img{
+    margin: 0px auto;
+    width: 350px;
+    height: 450px;
+}
+
+.segundaseccion_right button{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-right: 80px;
+} 
+
+/* Fin seccion 2 */
+
+
+/* Inicio Seccion 3 */
+
+.terceraseccion{
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 600px;
+    max-width: 1200px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "texto foto3 foto4";
+}
+
+.terceraseccion_left p{
+    font-size: 15px;
+    color: #455D6E;
+    line-height: 1;
+    text-align: center;
+    margin: 50px;
+    grid-area: texto;
+}
+
+.terceraseccion_center img{
+    width: 350px;
+    height: 500px;
+    grid-area: foto3;
+}
+
+.terceraseccion_right img{
+    width: 400px;
+    height: 300px;
+    grid-area: foto4;
+}
+
+/* Fin Seccion 3 */
+
+
+/* CONTACT US */
+
+.maincontactus{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.4fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "contactus"
+    "formulario"; 
+}
+
+.ContactUsTitulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 100px 10px 10px 80px;
+    grid-area: contactus; 
+}
+
+.formulario{
+    flex-direction: column;
+    width: 400px;
+    padding: 10px 10px 100px 10px;
+    margin-left: 90px;
+    margin-top: 10px;
+    grid-area: formulario;
+}
+
+
+.rellenocontactus{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.rellenocontactusdistinto{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.botonescontactus{
+    width: 100%;
+    background-color: #455D6E;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* FIN CONTACT US */
+
+
+/* FAQS */
+
+.faq_titulo{
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+.faq_titulo h1{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 20px 100px 30px 0px
+}
+
+.faq{
+    padding: 20px 30px;
+    border: 1px solid rgba(0 0 0 / .1);
+    border-radius: 5px;
+    color: #979797;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: 30px;
+    width: 800px;
+    align-items: center;
+}
+
+.preguntaabierta{
+    width: 90%;
+}
+
+.preguntaabierta h2{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.preguntaabierta p{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+}
+
+.pregunta{
+    width: 90%;
+}
+
+.pregunta h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.abierto{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.cerrado{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+/* Fin de FAQs */
+
+
+/* Inicoi de PORTFOLIO */
+
+.cards2{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.9fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "portfoliotitulo portfoliotitulo portfoliotitulo"
+    "portfoliosubtitulo portfoliosubtitulo portfoliosubtitulo"; 
+}
+
+.PortfolioTitulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 100px 10px 10px 190px;
+    grid-area: portfoliotitulo;
+}
+
+.PortfolioSubtitulo{
+    font-size: 20px;
+    font-weight: 200;
+    color: #455D6E;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    grid-area: portfoliosubtitulo;
+}
+
+.cards{
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "card1 card2 card3";
+}
+
+.card{
+    border: solid 1px #455D6E;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 310px;
+}
+
+.card_imagen{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card_titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #455D6E;
+}
+
+.card_parrafo{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+}
+
+/* fin del portfolio */
+
+
+/* Inicio STUDIO */
+
+.studiotitulo{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.9fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "portfoliotitulo portfoliotitulo portfoliotitulo"
+    "portfoliosubtitulo portfoliosubtitulo portfoliosubtitulo"; 
+    padding-bottom: 200px;
+}
+
+.primeraseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2.2fr 0.4fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "textostudio1 fotostudio1"
+    "textostudio1 Renata1"
+    "textostudio1 UX-Designer"; 
+}
+
+.primeraseccion_izquierda_studio{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-bottom: 200px;
+    grid-area: textostudio1;
+    width: 90%;
+    padding-left: 200px;
+    margin-top: 120px;
+    text-align: right;
+}
+
+.primeraseccion_derecha_studio img{
+    height: 500px;
+    width: 400px;
+    margin-left: 20px;
+    grid-area: fotostudio1;
+}
+
+.primeraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 30px;
+    grid-area: Renata1;
+}
+
+.primeraseccion_derecha_studio h5{
+    font-size: 25px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 5px;
+    margin-left: 30px;
+    grid-area: UX-Designer;
+}
+
+.segundaseccionstudio{
+    display: grid; 
+    grid-template-columns: 1.1fr 0.9fr; 
+    grid-template-rows: 0.8fr 1.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "titulostudio2 fotostudio2"
+    "textostudio2 fotostudio2";
+}
+
+.segundaseccion_izquierda_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 150px;
+    margin-left: 700px;
+    grid-area: titulostudio2;
+}
+
+.segundaseccion_izquierda_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 40px;
+    margin-left: 200px;
+    text-align: right;
+    grid-area: textostudio2;
+}
+
+.segundaseccion_derecha_studio img{
+    height: 500px;
+    width: 350px;
+    margin-left: 100px;
+    grid-area: fotostudio2;
+}
+
+.terceraseccionstudio{
+    display: flex;
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 100vh;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.terceraseccion_izquierda_studio{
+    width: 70%;
+    display: flex;
+}
+
+.fotostudiouno{
+    height: 400px;
+    width: 300px;
+    margin-top: 70px;
+}
+
+.fotostudiodos{
+    height: 600px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.terceraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.terceraseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.cuartaseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.7fr 1.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotostudio5 titulostudio4"
+    "fotostudio5 subtitulostudio4"; 
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: titulostudio4;
+    padding-right: 200px;
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: subtitulostudio4;
+    padding-right: 200px
+}
+
+.cuartaseccionstudio_izquierda_studio img{
+    width: 600px;
+    height: 600px;
+    grid-area: fotostudio5;
+    padding-left: 100px;
+}
+
+/* Inicio Footer */
+
+
+.footer{
+    padding: 40px 0;
+    background-color: #455D6E;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffffff;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li:hover{
+    opacity: 1;
+}
+
+.footer.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+}
+
+/* Fin del Footer */
+
+.header_iconobar{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:600px) {
+    /* HEADER */
+    .header{
+        width: 100%;
+        flex-direction: row-reverse
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .header_iconobar{
+        display: block;
+        font-size: 20px;
+        color: #455D6E;
+    }
+
+    .header_logo{
+        width: 150px;
+    }
+
+    #sidebar{
+        background-color: #455D6E;
+    }
+
+
+    #sidebar:target{
+         display: block;
+    }
+
+/* HOME */
+
+/* Main */
+
+/* Seccion 1 */
+
+.primeraseccion{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1.3fr 1.2fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotoportada"
+    "titulo"
+    "subtitulo";  
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+
+.primeraseccion_left img {
+    max-width: 2000px;
+    grid-area: fotoportada;
+}
+
+.primeraseccion_titulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    grid-area: titulo;
+    padding-left: 70px;
+    padding-top: 0px;
+}
+
+.primeraseccion_parrafo{
+    color: #455D6E;
+    grid-area: titulo;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+/* Fin seccion 1 */
+
+
+/* Seccion 2 */
+
+.segundaseccion{
+    display: grid; 
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+    "previousbuttom unafoto nextbuttom"; 
+}
+
+.segundaseccion_left img{
+    width: 350px;
+    height: 450px;
+    grid-area: unafoto;
+}
+
+.segundaseccion_left button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 13px;
+    grid-area: previousbuttom;
+} 
+
+.segundaseccion_right img{
+    display: none;
+}
+
+.segundaseccion_right button{
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 13px;
+    grid-area: nextbuttom;
+} 
+
+/* Fin seccion 2 */
+
+
+/* Inicio Seccion 3 */
+
+.terceraseccion{
+    display: grid; 
+    grid-template-columns: 0.7fr 1.2fr 1.1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+    "texto foto3 foto4";
+}
+
+.terceraseccion_left p{
+    font-size: 15px;
+    color: #455D6E;
+    line-height: 1;
+    text-align: center;
+    margin: 50px;
+    grid-area: texto;
+}
+
+.terceraseccion_center img{
+    width: 250px;
+    height: 350px;
+    grid-area: foto3;
+}
+
+.terceraseccion_right img{
+    width: 200px;
+    height: 250px;
+    grid-area: foto4;
+}
+
+/* Fin Seccion 3 */
+
+/* CONTACT US */
+
+.maincontactus{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.4fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "contactus"
+    "formulario"; 
+}
+
+.ContactUsTitulo{
+    font-size: 80px;
+    color: #455D6E;
+    line-height: 1;
+    grid-area: contactus; 
+    margin-right: 50px;
+}
+
+.formulario{
+    flex-direction: column;
+    width: 400px;
+    padding: 10px 10px 100px 10px;
+    margin-left: 70px;
+    margin-top: 10px;
+    grid-area: formulario;
+}
+
+
+.rellenocontactus{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.rellenocontactusdistinto{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.botonescontactus{
+    width: 300px;
+    background-color: #455D6E;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* FIN CONTACT US */
+
+/* FAQS */
+
+.faq_titulo{
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+.faq_titulo h1{
+    font-size: 80px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 20px 100px 30px 0px
+}
+
+.faq{
+    padding: 10px 20px;
+    border: 1px solid rgba(0 0 0 / .1);
+    border-radius: 5px;
+    color: #979797;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: 30px;
+    width: 400px;
+    align-items: center;
+}
+
+.preguntaabierta{
+    width: 90%;
+}
+
+.preguntaabierta h2{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.preguntaabierta p{
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 200;
+    color: #455D6E;
+    line-height: 20px;
+}
+
+.pregunta{
+    width: 90%;
+}
+
+.pregunta h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.abierto{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.cerrado{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+/* Fin de FAQs */
+
+/* Inicoi de PORTFOLIO */
+
+.cards2{
+}
+
+.PortfolioTitulo{
+    font-size: 80px;
+    color: #455D6E;
+    line-height: 1;
+    grid-area: portfoliotitulo;
+    padding-right: 800px;
+}
+
+.PortfolioSubtitulo{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    grid-area: portfoliosubtitulo;
+    width: 600px;
+}
+
+.cards{
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 0px; 
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3";
+}
+
+.card{
+    border: solid 1px #455D6E;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 310px;
+}
+
+.card_imagen{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card_titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #455D6E;
+}
+
+.card_parrafo{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+}
+
+/* fin del portfolio */
+
+/* Inicio STUDIO */
+
+.studiotitulo{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.8fr 1.2fr; 
+    gap: 20px 0px; 
+    grid-template-areas: 
+      "portfoliotitulo"
+      "portfoliosubtitulo";
+    padding-right: 200px;
+}
+
+.primeraseccionstudio{
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1.8fr 0.7fr 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "textostudio1"
+    "fotostudio1"
+    "Renata1"
+    "UX-Designer"; 
+}
+
+.primeraseccion_izquierda_studio{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-bottom: 200px;
+    grid-area: textostudio1;
+    width: 90%;
+    padding-left: 200px;
+    margin-top: 120px;
+    text-align: right;
+}
+
+.primeraseccion_derecha_studio img{
+    height: 500px;
+    width: 400px;
+    margin-left: 20px;
+    grid-area: fotostudio1;
+}
+
+.primeraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 30px;
+    grid-area: Renata1;
+}
+
+.primeraseccion_derecha_studio h5{
+    font-size: 25px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 5px;
+    margin-left: 30px;
+    grid-area: UX-Designer;
+}
+
+.segundaseccionstudio{
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.8fr 0.9fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "fotostudio2"
+    "textostudio2";
+}
+
+
+.segundaseccion_izquierda_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    padding-right: 200px;
+}
+
+.segundaseccion_izquierda_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    text-align: right;
+    padding-right: 400px;
+}
+
+.segundaseccion_derecha_studio img{
+    height: 400px;
+    width: 300px;
+    grid-area: fotostudio2;
+}
+
+.terceraseccionstudio{
+    display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 20px 0px; 
+  grid-template-areas: 
+    "hola1"
+    "hola2"
+    "hola3"
+    "hola4"
+}
+
+.fotostudiouno{
+    height: 400px;
+    width: 300px;
+    grid-area: hola3;
+}
+
+.fotostudiodos{
+    height: 600px;
+    width: 300px;
+    grid-area: hola4;
+}
+
+.terceraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    grid-area: hola1;
+}
+
+.terceraseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    grid-area: hola2;
+}
+
+.cuartaseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.7fr 1.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotostudio5 titulostudio4"
+    "fotostudio5 subtitulostudio4"; 
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: titulostudio4;
+    padding-right: 200px;
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: subtitulostudio4;
+    padding-right: 200px
+}
+
+.cuartaseccionstudio_izquierda_studio img{
+    width: 600px;
+    height: 600px;
+    grid-area: fotostudio5;
+    padding-left: 100px;
+}
+
+
+}
+
+@media screen and (max-width:1024px) {
+
+    /* HOME */
+
+/* Main */
+
+/* Seccion 1 */
+
+.primeraseccion{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.6fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotoportada titulo"
+    "fotoportada subtitulo"; 
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+
+.primeraseccion_left img {
+    max-width: 2000px;
+    grid-area: fotoportada;
+}
+
+.primeraseccion_titulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    grid-area: titulo;
+    padding-left: 70px;
+    padding-top: 0px;
+}
+
+.primeraseccion_parrafo{
+    color: #455D6E;
+    grid-area: titulo;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+/* Fin seccion 1 */
+
+
+/* Seccion 2 */
+
+.segundaseccion{
+    display: flex;
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 600px;
+    max-width: 1400px;
+    margin top: 800px;
+    align-items: center;
+}
+
+.segundaseccion_left{
+    width: 50%;
+    display: flex;
+}
+
+.segundaseccion_left img{
+    margin: 0px auto;
+    width: 350px;
+    height: 450px;
+}
+
+.segundaseccion_left button{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-left: 80px;
+} 
+
+.segundaseccion_right{
+    width: 50%;
+    display: flex;
+}
+
+.segundaseccion_right img{
+    margin: 0px auto;
+    width: 350px;
+    height: 450px;
+}
+
+.segundaseccion_right button{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    align-self: baseline;
+    background-color: #455D6E;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-right: 80px;
+} 
+
+/* Fin seccion 2 */
+
+
+/* Inicio Seccion 3 */
+
+.terceraseccion{
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 600px;
+    max-width: 1200px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "texto foto3 foto4";
+}
+
+.terceraseccion_left p{
+    font-size: 15px;
+    color: #455D6E;
+    line-height: 1;
+    text-align: center;
+    margin: 50px;
+    grid-area: texto;
+}
+
+.terceraseccion_center img{
+    width: 350px;
+    height: 500px;
+    grid-area: foto3;
+}
+
+.terceraseccion_right img{
+    width: 400px;
+    height: 300px;
+    grid-area: foto4;
+}
+
+/* Fin Seccion 3 */
+
+
+/* CONTACT US */
+
+.maincontactus{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.4fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "contactus"
+    "formulario"; 
+}
+
+.ContactUsTitulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 100px 10px 10px 80px;
+    grid-area: contactus; 
+}
+
+.formulario{
+    flex-direction: column;
+    width: 400px;
+    padding: 10px 10px 100px 10px;
+    margin-left: 90px;
+    margin-top: 10px;
+    grid-area: formulario;
+}
+
+
+.rellenocontactus{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.rellenocontactusdistinto{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #455D6E;
+    border-radius: 4px;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.botonescontactus{
+    width: 100%;
+    background-color: #455D6E;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* FIN CONTACT US */
+
+
+/* FAQS */
+
+.faq_titulo{
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+.faq_titulo h1{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 20px 100px 30px 0px
+}
+
+.faq{
+    padding: 20px 30px;
+    border: 1px solid rgba(0 0 0 / .1);
+    border-radius: 5px;
+    color: #979797;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: 30px;
+    width: 800px;
+    align-items: center;
+}
+
+.preguntaabierta{
+    width: 90%;
+}
+
+.preguntaabierta h2{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.preguntaabierta p{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+}
+
+.pregunta{
+    width: 90%;
+}
+
+.pregunta h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #455D6E;
+}
+
+.abierto{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.cerrado{
+    color: #455D6E;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+/* Fin de FAQs */
+
+
+/* Inicoi de PORTFOLIO */
+
+.cards2{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.9fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "portfoliotitulo portfoliotitulo portfoliotitulo"
+    "portfoliosubtitulo portfoliosubtitulo portfoliosubtitulo"; 
+}
+
+.PortfolioTitulo{
+    font-size: 120px;
+    color: #455D6E;
+    line-height: 1;
+    padding: 100px 10px 10px 190px;
+    grid-area: portfoliotitulo;
+}
+
+.PortfolioSubtitulo{
+    font-size: 20px;
+    font-weight: 200;
+    color: #455D6E;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    grid-area: portfoliosubtitulo;
+}
+
+.cards{
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "card1 card2 card3";
+}
+
+.card{
+    border: solid 1px #455D6E;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 310px;
+}
+
+.card_imagen{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card_titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #455D6E;
+}
+
+.card_parrafo{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+}
+
+/* fin del portfolio */
+
+
+/* Inicio STUDIO */
+
+.studiotitulo{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.9fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "portfoliotitulo portfoliotitulo portfoliotitulo"
+    "portfoliosubtitulo portfoliosubtitulo portfoliosubtitulo"; 
+    padding-bottom: 200px;
+}
+
+.primeraseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2.2fr 0.4fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "textostudio1 fotostudio1"
+    "textostudio1 Renata1"
+    "textostudio1 UX-Designer"; 
+}
+
+.primeraseccion_izquierda_studio{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-bottom: 200px;
+    grid-area: textostudio1;
+    width: 90%;
+    padding-left: 200px;
+    margin-top: 120px;
+    text-align: right;
+}
+
+.primeraseccion_derecha_studio img{
+    height: 500px;
+    width: 400px;
+    margin-left: 20px;
+    grid-area: fotostudio1;
+}
+
+.primeraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 30px;
+    grid-area: Renata1;
+}
+
+.primeraseccion_derecha_studio h5{
+    font-size: 25px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 5px;
+    margin-left: 30px;
+    grid-area: UX-Designer;
+}
+
+.segundaseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.6fr 1.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "titulostudio2 fotostudio2"
+    "textostudio2 fotostudio2";
+}
+
+.segundaseccion_izquierda_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    grid-area: titulostudio2;
+}
+
+.segundaseccion_izquierda_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    text-align: right;
+    grid-area: textostudio2;
+    width: 400px;
+}
+
+.segundaseccion_derecha_studio img{
+    height: 450px;
+    width: 300px;
+    grid-area: fotostudio2;
+}
+
+.terceraseccionstudio{
+    display: flex;
+    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
+    min-height: 100vh;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.terceraseccion_izquierda_studio{
+    width: 70%;
+    display: flex;
+}
+
+.fotostudiouno{
+    height: 400px;
+    width: 300px;
+    margin-top: 70px;
+}
+
+.fotostudiodos{
+    height: 600px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.terceraseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.terceraseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.cuartaseccionstudio{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.7fr 1.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "fotostudio5 titulostudio4"
+    "fotostudio5 subtitulostudio4"; 
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: titulostudio4;
+    padding-right: 200px;
+    padding-top: 300px;
+}
+
+.cuartaseccion_derecha_studio p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #455D6E;
+    margin-top: 30px;
+    margin-left: 100px;
+    grid-area: subtitulostudio4;
+    padding-right: 200px
+}
+
+.cuartaseccionstudio_izquierda_studio img{
+    width: 600px;
+    height: 600px;
+    grid-area: fotostudio5;
+    padding-left: 100px;
+}
+
+/* Inicio Footer */
+
+
+.footer{
+    padding: 40px 0;
+    background-color: #455D6E;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffffff;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li:hover{
+    opacity: 1;
+}
+
+.footer.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+}
+
+/* Fin del Footer */
+
+}
+    
+
+
+
+
+
+
+
