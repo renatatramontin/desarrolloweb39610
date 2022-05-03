@@ -17,16 +17,11 @@ ul{
     list-style: none;
 }
 
-.header{
+.navbar{
     height: 100px;
     width: 100%;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header_logo img{
@@ -106,75 +101,6 @@ ul{
 }
 
 /* Fin seccion 1 */
-
-
-/* Seccion 2 */
-
-.segundaseccion{
-    display: flex;
-    /* min height hace que ocupe toda la pantalla cada seccion y no veas por ej el footer */
-    min-height: 600px;
-    max-width: 1400px;
-    margin top: 800px;
-    align-items: center;
-}
-
-.segundaseccion_left{
-    width: 50%;
-    display: flex;
-}
-
-.segundaseccion_left img{
-    margin: 0px auto;
-    width: 350px;
-    height: 450px;
-}
-
-.segundaseccion_left button{
-    position: relative;
-    display: inline-block;
-    padding: 20px 30px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    align-self: baseline;
-    background-color: #455D6E;
-    border-radius: 10px;
-    font-size: 15px;
-    margin-top: 200px;
-    margin-left: 80px;
-} 
-
-.segundaseccion_right{
-    width: 50%;
-    display: flex;
-}
-
-.segundaseccion_right img{
-    margin: 0px auto;
-    width: 350px;
-    height: 450px;
-}
-
-.segundaseccion_right button{
-    position: relative;
-    display: inline-block;
-    padding: 20px 30px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    align-items: center;
-    align-self: baseline;
-    background-color: #455D6E;
-    border-radius: 10px;
-    font-size: 15px;
-    margin-top: 200px;
-    margin-right: 80px;
-} 
-
-/* Fin seccion 2 */
 
 
 /* Inicio Seccion 3 */

@@ -10,42 +10,47 @@
     <title>Document</title>
 
     <!-- Google Fonts Poppins 300, 400, 600, 700 -->
+    <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/e0d0b4a478.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--inicio de header-->
-    <header class="header">
-        <!-- icono bar -->
-        <a class="header_open" href="#sidebar">
-            <i class="header_iconobar fas fa-bars"></i> 
-        </a>
-        <!-- logo -->
-        <img class="header_logo" src="/imágenes/logoretra.png" alt="Logo retra" width="180">
-        <!-- opciones de nav -->
-        <nav class="nav" id="sidebar">
-          <ul class="nav_lista"> 
+    <div id="particles-js"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="color: #455D6E;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./imágenes/logoretra.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/studio.html">STUDIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/FAQs.html">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contact us.html">CONTACT US</a>
+                        </li>
 
-             <li class="nav_item">
-                 <a class="nav_enlace" href="index.html">Home</a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_enlace" href="./pages/studio.html">Studio</a>
-            </li>
-             <li class="nav_item">
-                 <a class="nav_enlace" href="./pages/portfolio.html">Portfolio</a>
-            </li>
-             <li class="nav_item">
-                 <a class="nav_enlace" href="./pages/contact us.html">Contact Us</a>
-            </li>
-             <li class="nav_item">
-                 <a class="nav_enlace" href="./pages/FAQs.html">FAQs</a>
-            </li>
-
-          </ul>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- fin del header -->
@@ -66,22 +71,6 @@
 
        </section>
        <!-- fin de la seccion1 -->
-
-       <!-- seccion 2 -->
-       <section class="segundaseccion">
-
-           <div class="segundaseccion_left">
-            <button>Previous Post</button>
-            <img src="imágenes/Logo.png" alt="imagenmockup" width="300">
-           </div>
-
-            <div class="segundaseccion_right">
-            <img src="imágenes/Tarjetas.png" alt="imagenlogo" height="400" width="280">
-            <button> Next Post</button>
-          </div>
-
-       </section
-      <!-- Fin de la sección 2 -->
 
        <!-- seccion 3 -->
        <section class="terceraseccion"> 
